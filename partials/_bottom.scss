@@ -1,0 +1,117 @@
+.sidebar .wrapper{
+    display: flex;
+    flex-direction: column;
+    .design-selection{
+        order: 3;
+    }
+    .design-archives{
+        order: 1;
+    }
+    .zen-resources{
+        order: 2;
+    }
+
+
+}
+
+/* designs*/
+
+.design-selection{
+    h3{
+        display: none;
+    }
+
+
+    ul{
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+
+
+
+    li{
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        a{
+            display: none;
+        }
+    }
+
+    //add numbers
+    $elements: 9;
+    @for $i from 1 to $elements{
+        & li:nth-of-type(#{$i}){
+            &::before{
+                content: "" + $i;
+                font-size: 5em;
+                color: $color-3;
+                margin: auto;
+                padding-left: 20px;
+
+            }
+        }
+    }
+
+    //alternate colors
+    & li:nth-of-type(4n+0){
+        background-color: $color-1;
+        color: $color-1;
+    }
+    & li:nth-of-type(4n+1){
+        background-color: $color-2;
+        color: $color-2;
+    }
+    & li:nth-of-type(4n+2){
+        background-color: $color-4;
+        color: $color-4;
+    }
+    & li:nth-of-type(4n+3){
+        background-color: $color-5;
+        color: $color-5;
+    }
+}
+
+}
+
+/*reactive screen*/
+@media only screen and (min-width: 700px) {
+    .design-selection{
+
+        h3{
+            display: block;
+        }
+    }
+}
+
+
+
+/*links*/
+.design-archives,.zen-resources{
+    width: 90%;
+    padding: 10px;
+    background-color: $color-2;
+    a{
+    text-decoration: none;
+    color: $color-3;
+    }
+    h3{
+        color: $color-3;
+    }
+
+    ul{
+        list-style: none;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .design-archives,.zen-resources{
+        width: 300px;
+        background-color: $color-1;
+
+    }
+}

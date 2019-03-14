@@ -1,0 +1,65 @@
+/* --------------------------------
+
+xPage title
+
+-------------------------------- */
+
+$color-1: #4281a4; // Cornflower Blue - Action color
+$color-2: #48a9a6; // Turquoise
+$color-3: #e4dfda; // Light Beige
+$color-4: #d4b483; // Goldenrod
+$color-5: #c1666b; // Red
+
+main > h1 {
+    color: $color-3;
+}
+
+div .summary {
+    background-color: $color-2;
+}
+
+main > h1 {
+  color: #e4dfda;
+}
+
+h3 {
+    color: #e4dfda;
+}
+
+.summary {
+    background-color: #4281a4;
+}
+
+.preamble {
+    background-color: #48a9a6;
+}
+
+.explanation {
+    background-color: #c1666b;
+}
+
+.participation {
+    background-color: #4281a4;
+}
+
+.benefits {
+    background-color: #48a9a6;
+
+}
+
+.requirements {
+    background-color: #c1666b;
+}
+
+div[role=article] {
+    padding: 10px;
+}
+
+
+@media only screen and (min-width: 700px) {
+    
+    
+    
+    
+    
+}
