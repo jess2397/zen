@@ -115,3 +115,33 @@
 
     }
 }
+
+
+footer{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    & a:nth-of-type(4n+0){
+        background-color: $color-1;
+    }
+    & a:nth-of-type(4n+1){
+        background-color: $color-2;
+    }
+    & a:nth-of-type(4n+2){
+        background-color: $color-4;
+    }
+    & a:nth-of-type(4n+3){
+        background-color: $color-5;
+    }
+}

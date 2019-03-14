@@ -22,7 +22,7 @@ h1 {
 h2 {
     font-weight: bold;
     text-transform: uppercase;
-    margin: 1em 0;
+    margin: 0px;
 }
 
 h3 {
@@ -34,12 +34,12 @@ h3 {
 
 
 p {
-    font-size: 1.4rem;
-    line-height: 1.4;
+    font-size: 18px;
+    line-height: 1.2em;
     color: $color-3;
 
     a {
-        color: $color-2;
+        color: $color-4;
         text-decoration: underline;
     }
 

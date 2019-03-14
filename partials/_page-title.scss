@@ -14,51 +14,60 @@ main > h1 {
     color: $color-3;
 }
 
-div .summary {
-    background-color: $color-2;
-}
-
 main > h1 {
-  color: #e4dfda;
+  color: $color-3;
 }
 
 h3 {
-    color: #e4dfda;
+    color: $color-3;
 }
 
 .summary {
-    background-color: #4281a4;
+    background-color: $color-1;
+    margin: 0px;
 }
 
 .preamble {
-    background-color: #48a9a6;
+    background-color: $color-2;
+    
 }
 
 .explanation {
-    background-color: #c1666b;
+    background-color: $color-5;
+   
 }
 
 .participation {
-    background-color: #4281a4;
+    background-color: $color-1;
+
 }
 
 .benefits {
-    background-color: #48a9a6;
+    background-color: $color-2;
 
 }
 
 .requirements {
-    background-color: #c1666b;
+    background-color: $color-5;
 }
 
 div[role=article] {
     padding: 10px;
 }
 
+.preamble, .explanation, .participation, .benefits, .requirements {
+    margin: 10px;
+}
+
+
+
 
 @media only screen and (min-width: 700px) {
     
-    
+    header{
+    max-width: 400px;
+    height: 100%;
+}
     
     
     
